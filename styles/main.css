@@ -1,0 +1,44 @@
+:root {
+    --color-primary: #4ee06a;
+    --color-secondary: #66e47e;
+    --color-tertiary: #7fe893;
+    --color-white: #fcfcfc;
+}
+
+.error {
+    border: 1px solid red;
+    color: red;
+    margin: 15px 5%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.item-list {
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.item-list > .item {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    border: 1px solid #4ee06a;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.headerContainer > h1 {
+    text-align: center;
+    color: #4ee06a;
+}

@@ -1,0 +1,73 @@
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.slider input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-round {
+    position: absolute;
+    cursor: pointer;
+    top: 2px; /* adjust the top position to center the handle vertically */
+    left: 2px; /* adjust the left position to center the handle horizontally */
+    right: 2px; /* adjust the right position to center the handle horizontally */
+    bottom: 2px; /* adjust the bottom position to center the handle vertically */
+    background-color: #ccc; /* default background color */
+    border-radius: 15px; /* make the slider handle rounded */
+    transition: .4s;
+}
+
+.slider-round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff; /* default slider color */
+    border-radius: 50%; /* make the slider handle rounded */
+    transition: .4s;
+}
+
+.slider input[type="checkbox"]:checked + .slider-round {
+    background-color: #4ee06a; /* background color when checked */
+}
+
+.slider input[type="checkbox"]:checked + .slider-round:before {
+    transform: translateX(100%); /* move slider to the right when checked */
+}
