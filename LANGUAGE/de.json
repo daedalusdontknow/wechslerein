@@ -1,0 +1,12 @@
+{
+  "name": "Deutsch",
+  "de.home": "Startseite",
+  "de.settings": "Einstellungen",
+  "de.refresh": "Aktualisieren",
+
+  "de.panel.item.add": "Eintrag hinzufügen",
+
+  "de.settings.inverterData": "Wechselrichter Konfiguration",
+
+  "de.error.config": "Die Konfigurationsdatei wurde nicht gefunden. Bitte richten Sie die Konfiguration in der Weboberfläche ein. (Einstellungen)"
+}

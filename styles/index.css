@@ -38,13 +38,12 @@
 }
 
 .pv-icon {
-    width: 200px;
-    height: 200px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 10px;
     color: #4ee06a;
+    font-size: 2em;
 }
 
 .add-item {

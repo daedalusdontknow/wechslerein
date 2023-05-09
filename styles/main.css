@@ -5,14 +5,38 @@
     --color-white: #fcfcfc;
 }
 
-.error {
-    border: 1px solid red;
-    color: red;
+.alert {
     margin: 15px 5%;
     border-radius: 5px;
-    text-align: center;
     padding: 10px;
 }
+
+
+#error {
+    border: 1px solid red;
+    color: red;
+}
+
+#failed {
+    border: 1px solid orange;
+    color: orange;
+}
+
+#success {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.alert-close {
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
 
 .item-list {
     padding: 50px 0;

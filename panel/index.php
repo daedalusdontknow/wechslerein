@@ -14,6 +14,8 @@
     include '../API/functions.php';
 
     $api = new API();
+    $langAPI = new languageAPI();
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -31,21 +33,43 @@
 
 <body>
 
-    <?php
-        if (!$api->configExists()) {
-            echo "<div class='error'>Die Konfigurationsdatei wurde nicht gefunden. Bitte richten Sie die Konfiguration in der Weboberfläche ein. (Settings) </div>";
-        }
-    ?>
+    <?php $api -> getErrors(); ?>
 
     <div class="item-list">
         <?php //print items ?>
 
+        <div class="item">
+            <div class="headerContainer">
+                <h1> <?php echo $langAPI -> getPhrase(".panel.presets.1"); ?> </h1>
+            </div>
+
+            <div class="pv-icon">
+                <i class="fa-solid fa-solar-panel"></i>
+            </div>
+
+            <p>
+                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.1"); ?> : <b> 0.5 kWh </b>
+                <br>
+                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.2"); ?> : <b> 1.5 kWh </b>
+                <br>
+                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.3"); ?> : <b> to Grid</b>
+            </p>
+
+        </div>
+
         <div class="item" id="add">
             <div class="add-item">
                 <i class="fa-solid fa-plus"></i>
-                <p>Add Item</p>
+                <p> <?php echo $langAPI -> getPhrase(".panel.item.add"); ?> </p>
+            </div>
         </div>
-    </div>
+
+        <div class="item" id="configure">
+            <div class="add-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p> <?php echo $langAPI -> getPhrase(".panel.item.config"); ?> </p>
+            </div>
+        </div>
 </body>
 
 <script>
@@ -54,6 +78,13 @@
     });
     $("#add").click(function() {
         window.location.href = "modules/add.php";
+    });
+
+    $("#configure").hover(function() {
+        $(this).css("cursor", "pointer");
+    });
+    $("#configure").click(function() {
+        window.location.href = "modules/configure.php";
     });
 </script>
 

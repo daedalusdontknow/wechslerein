@@ -1,0 +1,28 @@
+.moduleContainer {
+    background-color: #fff;
+    border: 1px solid #4ee06a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 2%;
+}
+
+.button {
+    background-color: #4ee06a;
+    border: 1px solid #4ee06a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}

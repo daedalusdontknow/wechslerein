@@ -44,7 +44,7 @@
         //get the config values from the config file
         $ip = $config['ip'];
         $register_key = $config['installerKey'];
-        $saveData = $config['saveData'];
+        $saveData = $config['recordData'];
 
         if ($ip == "" || $register_key == "") {
             echo "config file is empty \n";

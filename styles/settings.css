@@ -30,7 +30,7 @@ button:hover {
 .slider {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 50px;
     height: 30px;
 }
 
@@ -43,12 +43,12 @@ button:hover {
 .slider-round {
     position: absolute;
     cursor: pointer;
-    top: 2px; /* adjust the top position to center the handle vertically */
-    left: 2px; /* adjust the left position to center the handle horizontally */
-    right: 2px; /* adjust the right position to center the handle horizontally */
-    bottom: 2px; /* adjust the bottom position to center the handle vertically */
-    background-color: #ccc; /* default background color */
-    border-radius: 15px; /* make the slider handle rounded */
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #ccc;
+    border-radius: 15px;
     transition: .4s;
 }
 
@@ -70,4 +70,14 @@ button:hover {
 
 .slider input[type="checkbox"]:checked + .slider-round:before {
     transform: translateX(100%); /* move slider to the right when checked */
+}
+
+select {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
 }

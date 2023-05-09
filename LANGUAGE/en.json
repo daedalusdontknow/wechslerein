@@ -1,0 +1,39 @@
+{
+  "name": "English",
+  "en.home": "Home",
+  "en.settings": "Settings",
+  "en.refresh": "Refresh",
+  "en.save": "Save",
+  "en.beta": "Currently this feature is in beta, which means that some functions may not work properly. If you find a bug, please report it to the developer.",
+
+  "en.presets.1.title": "Preset 1",
+
+  "en.presets.add": "Add preset",
+
+  "en.panel.item.add": "Add item",
+  "en.panel.item.config": "Configure items",
+
+  "en.panel.presets.1": "Photovoltaic data",
+  "en.panel.presets.1.line.1": "Currently generating",
+  "en.panel.presets.1.line.2": "Today",
+  "en.panel.presets.1.line.3": "Direction",
+
+  "en.settings.inverterData": "Inverter configuration",
+  "en.settings.recordData": "Record data",
+  "en.settings.language": "Language",
+  "en.settings.update": "Update",
+  "en.settings.version.current": "Current version:",
+  "en.settings.update.check": "Check for updates",
+  "en.settings.removeSoftware": "Remove Wechslerein",
+  "en.settings.success": "Settings saved successfully",
+  "en.settings.failed": "Settings could not be saved",
+
+  "en.module.presets": "Preset modules",
+  "en.module.presets.btn": "Go to presets",
+  "en.module.add": "Add a module",
+  "en.module.add.item": "Which item should be added?",
+  "en.module.liveEditor": "Live editor",
+  "en.module.liveEditor.btn": "Go to live editor",
+
+  "en.error.config": "The configuration file was not found. Please set up the configuration in the web interface. (Settings)"
+}
