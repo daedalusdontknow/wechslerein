@@ -38,29 +38,6 @@
     <div class="item-list">
         <?php //print items ?>
 
-        <div class="item">
-            <canvas id="graph"></canvas>
-
-            <script>
-                // get the response from this via AJAX http://localhost/API/graphics.php?getGraphics=points&type=BATTSOC&range=15
-                const url = 'http://localhost/API/graphics.php?getGraphics=points&type=BATTSOC&range=15';
-
-                fetch(url)
-                    .then(response => {
-                        if (response.ok) {
-                            return response.text();
-                        }
-                        throw new Error('Network response was not OK.');
-                    })
-                    .then(data => {
-                        console.log(data);
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
-            </script>
-        </div>
-
         <div class="item" id="add">
             <div class="add-item">
                 <i class="fa-solid fa-plus"></i>

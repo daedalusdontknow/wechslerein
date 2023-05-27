@@ -40,6 +40,34 @@ $api -> setBeta();
             <h1> <?php echo $langAPI -> getPhrase(".module.liveEditor"); ?> </h1>
         </div>
 
+        <div class="item-list">
+            <div class="item">
+                <div>
+                    <textarea id="codeArea" name="text" cols="35" rows="4"></textarea>
+                </div>
+            </div>
 
+            <div class="item">
+
+                <div class="iframe"></div>
+
+                <script>
+                    //display live the html written in the textarea above
+                    function update() {
+                        const text = document.getElementById("codeArea").value;
+                        document.querySelector(".iframe").innerHTML = text;
+                        //if there is a script or a php tag, it will be executed
+                        const scripts = document.querySelectorAll(".iframe script");
+                        for (let i = 0; i < scripts.length; i++) {
+                            eval(scripts[i].innerText);
+                        }
+
+                        const php = document.querySelectorAll(".iframe .php");
+                    }
+
+                    //update the iframe every 500ms
+                    setInterval(update, 500);
+                </script>
+            </div>
 
     </div>
