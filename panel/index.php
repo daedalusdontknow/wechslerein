@@ -39,22 +39,26 @@
         <?php //print items ?>
 
         <div class="item">
-            <div class="headerContainer">
-                <h1> <?php echo $langAPI -> getPhrase(".panel.presets.1"); ?> </h1>
-            </div>
+            <canvas id="graph"></canvas>
 
-            <div class="pv-icon">
-                <i class="fa-solid fa-solar-panel"></i>
-            </div>
+            <script>
+                // get the response from this via AJAX http://localhost/API/graphics.php?getGraphics=points&type=BATTSOC&range=15
+                const url = 'http://localhost/API/graphics.php?getGraphics=points&type=BATTSOC&range=15';
 
-            <p>
-                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.1"); ?> : <b> 0.5 kWh </b>
-                <br>
-                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.2"); ?> : <b> 1.5 kWh </b>
-                <br>
-                <?php echo $langAPI -> getPhrase(".panel.presets.1.line.3"); ?> : <b> to Grid</b>
-            </p>
-
+                fetch(url)
+                    .then(response => {
+                        if (response.ok) {
+                            return response.text();
+                        }
+                        throw new Error('Network response was not OK.');
+                    })
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            </script>
         </div>
 
         <div class="item" id="add">

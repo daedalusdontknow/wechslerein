@@ -10,7 +10,7 @@
     class API {
 
         public function getVersion() : string {
-            return "B0.0.1";
+            return "B0.0.3";
         }
 
         public function configExists() : bool {
@@ -55,6 +55,20 @@
             $data = file_get_contents(__DIR__ . "/../DATA/data.json");
             $data = explode(";", $data)[1];
             return json_decode($data, true);
+        }
+
+        function getDataLast($minutes): void
+        {
+            $data = file_get_contents(__DIR__ . "/../DATA/data.json");
+            $data = explode(";", $data)[1];
+
+            include_once __DIR__ . "/database.php";
+            $sql = new SQL();
+            $dbData = $sql->readData(date("Y-m-d H:i:s", strtotime("-" . $minutes . " minutes")), date("Y-m-d H:i:s"));
+
+            $data = array_merge(json_decode($data, true), $dbData);
+
+            echo json_encode($data, true);
         }
     }
 

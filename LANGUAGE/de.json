@@ -1,12 +1,39 @@
 {
   "name": "Deutsch",
-  "de.home": "Startseite",
-  "de.settings": "Einstellungen",
-  "de.refresh": "Aktualisieren",
+  "de.home": "Home",
+  "de.settings": "Settings",
+  "de.refresh": "Refresh",
+  "de.save": "Save",
+  "de.beta": "Currently this feature is in beta, which means that some functions may not work properly. If you find a bug, please report it to the developer.",
 
-  "de.panel.item.add": "Eintrag hinzufügen",
+  "de.presets.1.title": "Preset 1",
 
-  "de.settings.inverterData": "Wechselrichter Konfiguration",
+  "de.presets.add": "Add preset",
 
-  "de.error.config": "Die Konfigurationsdatei wurde nicht gefunden. Bitte richten Sie die Konfiguration in der Weboberfläche ein. (Einstellungen)"
+  "de.panel.item.add": "Add item",
+  "de.panel.item.config": "Configure items",
+
+  "de.panel.presets.1": "Photovoltaic data",
+  "de.panel.presets.1.line.1": "Currently generating",
+  "de.panel.presets.1.line.2": "Today",
+  "de.panel.presets.1.line.3": "Direction",
+
+  "de.settings.inverterData": "Inverter configuration",
+  "de.settings.recordData": "Record data",
+  "de.settings.language": "Language",
+  "de.settings.update": "Update",
+  "de.settings.version.current": "Current version:",
+  "de.settings.update.check": "Check for updates",
+  "de.settings.removeSoftware": "Remove Wechslerein",
+  "de.settings.success": "Settings saved successfully",
+  "de.settings.failed": "Settings could not be saved",
+
+  "de.module.presets": "Preset modules",
+  "de.module.presets.btn": "Go to presets",
+  "de.module.add": "Add a module",
+  "de.module.add.item": "Which item should be added?",
+  "de.module.liveEditor": "Live editor",
+  "de.module.liveEditor.btn": "Go to live editor",
+
+  "de.error.config": "The configuration file was not found. Please set up the configuration in the web interface. (Settings)"
 }

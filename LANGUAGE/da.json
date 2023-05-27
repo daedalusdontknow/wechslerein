@@ -1,0 +1,39 @@
+{
+  "name": "Dansk",
+  "da.home": "Hjem",
+  "da.settings": "Indstillinger",
+  "da.refresh": "opdater",
+  "da.save": "Gem",
+  "da.beta": "Denne funktion er i øjeblikket i betaversion, hvilket betyder, at nogle funktioner muligvis ikke fungerer korrekt. Hvis du finder en fejl, bedes du rapportere den til udvikleren.",
+
+  "da.presets.1.title": "Forindstilling 1",
+
+  "da.presets.add": "Tilføj forindstilling",
+
+  "da.panel.item.add": "Tilføj et element",
+  "da.panel.item.config": "Konfigurer elementet",
+
+  "da.panel.presets.1": "Photovoltaic data",
+  "da.panel.presets.1.line.1": "Currently generating",
+  "da.panel.presets.1.line.2": "Today",
+  "da.panel.presets.1.line.3": "Direction",
+
+  "da.settings.inverterData": "Inverter konfiguration",
+  "da.settings.recordData": "Optag data",
+  "da.settings.language": "Sprog",
+  "da.settings.update": "Opdater",
+  "da.settings.version.current": "nuværende version:",
+  "da.settings.update.check": "Check for opdateringer",
+  "da.settings.removeSoftware": "Fjern Wechslerein",
+  "da.settings.success": "Indstillingerne blev gemt",
+  "da.settings.failed": "Indstillingerne kunne ikke gemmes",
+
+  "da.module.presets": "Preset moduler",
+  "da.module.presets.btn": "Gå til presets",
+  "da.module.add": "Tilføj et modul",
+  "da.module.add.item": "Hvilket item skal vi tilføje?",
+  "da.module.liveEditor": "Live editor",
+  "da.module.liveEditor.btn": "Gå til live editoren",
+
+  "da.error.config": "Konfigurationsfilen blev ikke fundet. Du skal konfigurere konfigurationen i webgrænsefladen. (Indstillinger)"
+}
