@@ -3,7 +3,6 @@ label {
     font-weight: bold;
     font-size: 1em;
 }
-
 input {
     margin-bottom: 10px;
     height: 30px;
@@ -13,7 +12,6 @@ input {
     box-sizing: border-box;
     text-align: center;
 }
-
 button {
     height: 30px;
     width: 200px;
@@ -21,25 +19,21 @@ button {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 button:hover {
     background-color: #e6e6e6;
     cursor: pointer;
 }
-
 .slider {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 30px;
 }
-
 .slider input[type="checkbox"] {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 .slider-round {
     position: absolute;
     cursor: pointer;
@@ -51,7 +45,6 @@ button:hover {
     border-radius: 15px;
     transition: .4s;
 }
-
 .slider-round:before {
     position: absolute;
     content: "";
@@ -59,19 +52,20 @@ button:hover {
     width: 26px;
     left: 0;
     bottom: 0;
-    background-color: #fff; /* default slider color */
-    border-radius: 50%; /* make the slider handle rounded */
+    background-color: #fff;
+    /* default slider color */
+    border-radius: 50%;
+    /* make the slider handle rounded */
     transition: .4s;
 }
-
 .slider input[type="checkbox"]:checked + .slider-round {
-    background-color: #4ee06a; /* background color when checked */
+    background-color: #4ee06a;
+    /* background color when checked */
 }
-
 .slider input[type="checkbox"]:checked + .slider-round:before {
-    transform: translateX(100%); /* move slider to the right when checked */
+    transform: translateX(100%);
+    /* move slider to the right when checked */
 }
-
 select {
     margin-bottom: 10px;
     height: 30px;

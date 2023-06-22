@@ -4,29 +4,23 @@
     --color-tertiary: #7fe893;
     --color-white: #fcfcfc;
 }
-
 .alert {
     margin: 15px 5%;
     border-radius: 5px;
     padding: 10px;
 }
-
-
 #error {
     border: 1px solid red;
     color: red;
 }
-
 #failed {
     border: 1px solid orange;
     color: orange;
 }
-
 #success {
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
 }
-
 .alert-close {
     font-weight: bold;
     float: right;
@@ -36,8 +30,6 @@
     margin-bottom: auto;
     text-align: center;
 }
-
-
 .item-list {
     padding: 50px 0;
     justify-content: center;
@@ -48,7 +40,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
-
 .item-list > .item {
     margin-left: 5%;
     margin-right: 5%;
@@ -61,7 +52,6 @@
     align-items: center;
     height: 400px;
 }
-
 .headerContainer > h1 {
     text-align: center;
     color: #4ee06a;

@@ -27,6 +27,7 @@
   "de.settings.removeSoftware": "Remove Wechslerein",
   "de.settings.success": "Settings saved successfully",
   "de.settings.failed": "Settings could not be saved",
+  "de.settings.plugins": "Install Plugins",
 
   "de.module.presets": "Preset modules",
   "de.module.presets.btn": "Go to presets",

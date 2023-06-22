@@ -27,6 +27,7 @@
   "en.settings.removeSoftware": "Remove Wechslerein",
   "en.settings.success": "Settings saved successfully",
   "en.settings.failed": "Settings could not be saved",
+  "en.settings.plugins": "Install Plugins",
 
   "en.module.presets": "Preset modules",
   "en.module.presets.btn": "Go to presets",
@@ -35,5 +36,5 @@
   "en.module.liveEditor": "Live editor",
   "en.module.liveEditor.btn": "Go to live editor",
 
-  "en.error.config": "The configuration file was not found. Please set up the configuration in the web interface. (Settings)"
+  "en.error.config": "The configuration file was not found. Please set up the configuration in the web interface. (Settings)",
 }
