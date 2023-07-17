@@ -1,6 +1,6 @@
 .moduleContainer {
-    background-color: #fff;
-    border: 1px solid #4ee06a;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
@@ -9,11 +9,11 @@
 }
 
 .button {
-    background-color: #4ee06a;
-    border: 1px solid #4ee06a;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     border-radius: 4px;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     display: inline-block;
     font-size: 14px;

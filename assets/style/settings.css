@@ -59,7 +59,7 @@ button:hover {
     transition: .4s;
 }
 .slider input[type="checkbox"]:checked + .slider-round {
-    background-color: #4ee06a;
+    background-color: var(--color-primary);
     /* background color when checked */
 }
 .slider input[type="checkbox"]:checked + .slider-round:before {

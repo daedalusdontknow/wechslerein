@@ -36,7 +36,7 @@ include_once '../../resources/functions.php';
             <div class="item-list">
                 <div class="item">
                     <div>
-                        <textarea id="codeArea" name="text" cols="35" rows="4"></textarea>
+                        <textarea id="codeArea" name="text" style="background-color: #fff; border: 1px solid #4ee06a; border-radius: 4px; box-sizing: border-box; text-align: center; padding: 10px; margin: 0; width: 500%; height: 200px; resize: none;"></textarea>
                     </div>
                 </div>
 

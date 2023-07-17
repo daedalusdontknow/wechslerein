@@ -12,6 +12,9 @@
 
     include_once '../assets/objects.php';
     include_once '../resources/functions.php';
+
+    $array = languageAPI::loadLanguage("en");
+    print_r($array);
 ?>
 <!DOCTYPE html>
     <head>
